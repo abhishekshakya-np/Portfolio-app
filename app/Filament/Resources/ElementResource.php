@@ -25,6 +25,12 @@ class ElementResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
+    /**
+     * Generates a form schema based on the provided JSON schema data.
+     *
+     * @param Form $form The form instance to be used.
+     * @return Form The generated form schema.
+     */
     public static function form(Form $form): Form
     {
         $jsonSchemaData = self::getJsonSchemaData();
@@ -85,6 +91,12 @@ class ElementResource extends Resource
         ];
     }
 
+    /**
+     * Retrieves JSON schema data from a file.
+     *
+     * @throws \Exception description of exception
+     * @return mixed
+     */
     private static function getJsonSchemaData()
     {
         try {
@@ -99,6 +111,12 @@ class ElementResource extends Resource
             return null;
         }
     }
+    /**
+     * Builds a form based on the given JSON schema data.
+     *
+     * @param mixed $jsonSchemaData The JSON schema data used to build the form.
+     * @return array An array of field sets representing the form.
+     */
     private static function buildForm($jsonSchemaData): array
     {
         $fieldSets = [];
@@ -118,5 +136,4 @@ class ElementResource extends Resource
 
         return $fieldSets;
     }
-
 }
