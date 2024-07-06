@@ -1,0 +1,72 @@
+
+
+@extends('layouts.app')
+
+@section('content')
+
+        <header class="container header active" id="home">
+            <div class="header-content">
+                <div class="left-header">
+                    <div class="h-shape"></div>
+                    <div class="image">
+                        <img src="{{asset('img/hero.png')}}" alt="">
+{{--                        <img src="{{ $profile->image ? asset('storage/' . $profile->image) : asset('img/default.png') }}" alt="">--}}
+                    </div>
+                </div>
+                <div class="right-header">
+                    <h1 class="name">
+                        Hi, I'm <span>Abhishek Shakya.</span><br>
+                        A Web Developer.
+{{--                        Hi, I'm <span>{{ $profile->name ?? 'Your Name' }}.</span><br>--}}
+{{--                        A <span>{{ $profile->job ?? 'Your Job Title' }}</span>.--}}
+                    </h1>
+                    <p>
+                        I'm a UI/UX Designer, I love to create beautiful and functional websites seeking for a challenging
+                        position in an organization that offers an opportunity to explore the ﬁeld
+                        of creating website and app design while accomplishing personal, professional as well as
+                        organizational goal.
+                        I am dynamic, creative, result driven and possess positive attitude to bring the changes in the
+                        work.
+                    </p>
+                    <div class="btn-con">
+                        <a {{asset('img/Abhishek%20Shakya%20Resume.pdf')}} class="main-btn">
+                            <span class="btn-text">Download CV</span>
+                            <span class="btn-icon"><i class="fas fa-download"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+{{--        <div class="container">--}}
+{{--            <form action="{{ route('profile.update') }}" method="POST" enctype="multipart/form-data">--}}
+{{--                @csrf--}}
+{{--                <div class="form-group">--}}
+{{--                    <label for="name">Name:</label>--}}
+{{--                    <input type="text" name="name" class="form-control" value="{{ $profile->name ?? '' }}">--}}
+{{--                </div>--}}
+{{--                <div class="form-group">--}}
+{{--                    <label for="job">Job Title:</label>--}}
+{{--                    <input type="text" name="job" class="form-control" value="{{ $profile->job ?? '' }}">--}}
+{{--                </div>--}}
+{{--                <div class="form-group">--}}
+{{--                    <label for="image">Profile Picture:</label>--}}
+{{--                    <input type="file" name="image" class="form-control">--}}
+{{--                </div>--}}
+{{--                <button type="submit" class="btn btn-primary">Update Profile</button>--}}
+{{--            </form>--}}
+{{--        </div>--}}
+
+@endsection
+
+
+
+array:5 [▼ // resources\views/components/about-me-component.blade.php
+  "title" => "<h2>Hi, I'm Abhishek Shakya.</h2><p>A Web Developer.</p>"
+  "subtitle" => "
+I'm a UI/UX Designer, I love to create beautiful and functional websites seeking for a challenging position in an organization that offers an opportunity to exp
+ ▶
+"
+  "image_url" => "elements/IMG_20240324_184905.png"
+  "action_button_url" => "http://portfolio-app.test/"
+  "action_button_text" => "Download cv"
