@@ -80,7 +80,10 @@ class ElementResource extends Resource
     {
         return $table
             ->columns([
-                //
+                Tables\Columns\TextColumn::make('page'),
+                Tables\Columns\TextColumn::make('component'),
+                Tables\Columns\TextColumn::make('status'),
+                Tables\Columns\TextColumn::make('content.title'),
             ])
             ->filters([
                 //

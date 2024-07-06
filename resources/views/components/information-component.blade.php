@@ -1,3 +1,4 @@
+{{--@dd($information);--}}
 <section  id="about">
     <div class="main-title">
         <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
@@ -15,31 +16,17 @@
                 </a>
             </div>
         </div>
+
         <div class="right-about">
-            <div class="about-item">
-                <div class="abt-text">
-                    <p class="large-text">{{$information['title_one']}}</p>
-                    <p class="small-text">{!!$information['subtitle_one']!!}</p>
+            @foreach($information['stat_items'] as $item)
+{{--                @dd($item)--}}
+                <div class="about-item">
+                    <div class="abt-text">
+                        <p class="large-text">{{$item['content']['number']}}</p>
+                        <p class="small-text">{!! $item['content']['items'] !!}</p>
+                    </div>
                 </div>
-            </div>
-            <div class="about-item">
-                <div class="abt-text">
-                    <p class="large-text">{{$information['title_two']}}</p>
-                    <p class="small-text">{!!$information['subtitle_two']!!}</p>
-                </div>
-            </div>
-            <div class="about-item">
-                <div class="abt-text">
-                    <p class="large-text">{{$information['title_three']}}</p>
-                    <p class="small-text">{!!$information['subtitle_three']!!}</p>
-                </div>
-            </div>
-            <div class="about-item">
-                <div class="abt-text">
-                    <p class="large-text">{{$information['title_four']}}</p>
-                    <p class="small-text">{!!$information['subtitle_four']!!}</p>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
     <div class="about-stats">
