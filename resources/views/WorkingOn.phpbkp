@@ -1,0 +1,41 @@
+First as start needed to start to made a plan to make how many component
+
+After that open component-schema.json and create component
+
+After that open Componentconstant.php and state that the case will be Stats
+
+php artisan make:component InformationComponent
+
+app\View\Components\InformationComponent.php
+ write a query for STATS to return view from $information as content
+
+After that gone back to admin panel to add information component from element
+to check on website and after that used {{$information['subtitle']}} , {!!$information['subtitle']!!}
+
+These where the problem i was stuck after i create ElementResource and component-schema.json
+ElementResource.php
+ Generates a form schema based on the provided JSON schema data.
+  $jsonSchemaData = self::getJsonSchemaData();
+
+ Retrieves JSON schema data from a file.
+  private static function getJsonSchemaData()
+
+ Builds a form based on the given JSON schema data.
+  private static function buildForm($jsonSchemaData): array
+
+storage
+       app
+           livewire-tmp
+           public
+           .gitignore
+           component-schema.json
+            {"components":[{"name": "Home","fields":[{"name": "title", "type": "richtextarea", "label": "Title"},]}]}
+
+php artisan make:component AboutMeComponent
+
+<x-about-me-component></x-about-me-component> {{home.blade.php}}
+
+about-me-component.blade.php
+{{--@dd($aboutMeContent);--}} -> check the data
+{{is a variable in PHP that stores the content related to the "About Me" section['image_url']}}
+

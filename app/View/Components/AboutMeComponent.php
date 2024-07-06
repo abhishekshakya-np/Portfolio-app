@@ -23,9 +23,21 @@ class AboutMeComponent extends Component
      */
     public function render(): View|Closure|string
     {
-        $aboutme = Element::query()->where('component', ComponentConstant::HOME)->first();
-        return view('components.about-me-component',[
-            'aboutme' => $aboutme->content
+        // This code is equivalent to the commented out code below it, but it uses the query builder
+      // instead of the query method
+        $homeElement = Element::where('component', ComponentConstant::HOME)->first();
+        $aboutMeContent = $homeElement->content;
+        return view('components.about-me-component', [
+            'aboutMeContent' => $aboutMeContent,
+
+
+//        This code uses the ORM to get the first element where the component is Home.
+//        It then retrieves the content of that element and passes it to the view.
+//        The difference is that the first code uses the query builder, while the second uses the ORM.
+//        $aboutme = Element::query()->where('component', ComponentConstant::HOME)->first();
+//        return view('components.about-me-component',[
+//       'aboutme' => $aboutme->content,
+
         ]);
     }
 }

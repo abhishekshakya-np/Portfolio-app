@@ -11,17 +11,20 @@ use Filament\Support\Contracts\HasLabel;
 enum PageConstant: string implements HasLabel
 {
     case HOME = 'home';
-    case PRODUCT = 'product';
-    case ABOUTUS = 'about-us';
-    case FAQ = 'faq';
+
+    case ABOUT = 'about-us';
+
+    case PORTFOLIO = 'portfolio';
+
+    case BLOGS = 'blogs';
 
     public function getLabel(): string
     {
         return match ($this) {
             self::HOME => 'Home',
-            self::PRODUCT => 'Product',
-            self::ABOUTUS => 'About Us',
-            self::FAQ => 'FAQ',
+            self::ABOUT => 'About Us',
+            self::PORTFOLIO => 'Portfolio',
+            self::BLOGS => 'Blogs',
         };
     }
 }

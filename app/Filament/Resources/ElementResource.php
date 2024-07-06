@@ -9,6 +9,7 @@ use App\Filament\Resources\ElementResource\Pages;
 use App\Filament\Resources\ElementResource\RelationManagers;
 use App\Helpers\DynamicFormBuilder;
 use App\Models\Element;
+use Exception;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -26,34 +27,53 @@ class ElementResource extends Resource
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     /**
-     * Generates a form schema based on the provided JSON schema data.
+     *
      *
      * @param Form $form The form instance to be used.
      * @return Form The generated form schema.
+     * @throws Exception
      */
     public static function form(Form $form): Form
     {
+        /**
+         * Builds the form schema based on the provided JSON schema data.
+         *
+         * @param Form $form The form instance to be used.
+         * @return Form The generated form schema.
+         */
+        // Retrieve the JSON schema data
         $jsonSchemaData = self::getJsonSchemaData();
 
+        // Define the form schema components
         $formSchema = [
+            // Page selection dropdown
             Forms\Components\Select::make('page')
-                ->required()
-                ->options(PageConstant::class)
-                ->searchable(),
+                ->required() // Set as a required field
+                ->options(PageConstant::class) // Set the options from the enum class
+                ->searchable(), // Enable search functionality
+
+            // Section selection dropdown
             Forms\Components\Select::make('component')
-                ->label('Section')
+                ->label('Section') // Set the label
                 ->required()
                 ->options(ComponentConstant::class)
-                ->reactive()
+                ->reactive() // Indicate that the options depend on the selected page
                 ->searchable(),
+
+            // Status selection dropdown
             Forms\Components\Select::make('status')
                 ->required()
                 ->options(ElementStatusConstant::class)
                 ->searchable(),
+
+            // Add the dynamically generated form components
             ...self::buildForm($jsonSchemaData),
         ];
 
+        // Return the form schema
         return $form->schema($formSchema);
+
+
     }
 
     public static function table(Table $table): Table
@@ -91,13 +111,14 @@ class ElementResource extends Resource
         ];
     }
 
+
     /**
      * Retrieves JSON schema data from a file.
      *
-     * @throws \Exception description of exception
+     * @throws Exception description of exception
      * @return mixed
      */
-    private static function getJsonSchemaData()
+    private static function getJsonSchemaData(): mixed
     {
         try {
             //read json file
@@ -105,12 +126,14 @@ class ElementResource extends Resource
             $json = File::get($jsonFilePath);
 
             return json_decode($json, true);
-        } catch (\Exception $exception) {
+        } catch (Exception $exception) {
             Log::critical($exception);
 
             return null;
         }
     }
+
+
     /**
      * Builds a form based on the given JSON schema data.
      *
