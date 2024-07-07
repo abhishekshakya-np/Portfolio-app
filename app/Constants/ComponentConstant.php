@@ -7,8 +7,8 @@ enum ComponentConstant: string
 {
     case HOME = 'Home';
     case STATS = 'Stats';
-    case ABOUT = 'About';
-    case VISION_HERO = 'Vision Hero';
+    case SKILLS = 'Skills';
+    case TIMELINE = 'Timeline';
     case WORK = 'Work';
     case MATTER = 'Matter';
     case NEWSLETTER = 'Newsletter';

@@ -3,8 +3,17 @@
 
 
 @section('content')
+    <section  id="about">
+        <div class="main-title">
+            <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+        </div>
 
     <x-information-component></x-information-component>
+    <x-skills-component></x-skills-component>
+        <x-timeline-component></x-timeline-component>
+
+    </section>
+@endsection
 
 {{--    <section  id="about">--}}
 {{--        <div class="main-title">--}}
@@ -191,5 +200,5 @@
 {{--    </section>--}}
 
 
-@endsection
+
 
