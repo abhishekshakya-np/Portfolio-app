@@ -15,12 +15,12 @@
         </div>
 
         <div class="right-about">
-            @foreach($information['stat_items'] as $item)
-{{--                @dd($item)--}}
+            @foreach($information['stat_items'] as $stat)
+{{--                @dd($stat)--}}
                 <div class="about-item">
                     <div class="abt-text">
-                        <p class="large-text">{{$item['content']['number']}}</p>
-                        <p class="small-text">{!! $item['content']['items'] !!}</p>
+                        <p class="large-text"> {{$stat['content']['number']}} </p>
+                        <p class="small-text"> {!! $stat['content']['items'] !!} </p>
                     </div>
                 </div>
             @endforeach

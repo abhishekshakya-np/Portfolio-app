@@ -41,25 +41,25 @@
 {{--                </div>--}}
 {{--            </div>--}}
 {{--            <div class="right-about">--}}
-{{--                <div class="about-item">--}}
+{{--                <div class="about-stat">--}}
 {{--                    <div class="abt-text">--}}
 {{--                        <p class="large-text">50+</p>--}}
 {{--                        <p class="small-text">Projects <br /> Completed</p>--}}
 {{--                    </div>--}}
 {{--                </div>--}}
-{{--                <div class="about-item">--}}
+{{--                <div class="about-stat">--}}
 {{--                    <div class="abt-text">--}}
 {{--                        <p class="large-text">2+</p>--}}
 {{--                        <p class="small-text">Years of <br /> experience</p>--}}
 {{--                    </div>--}}
 {{--                </div>--}}
-{{--                <div class="about-item">--}}
+{{--                <div class="about-stat">--}}
 {{--                    <div class="abt-text">--}}
 {{--                        <p class="large-text">29+</p>--}}
 {{--                        <p class="small-text">Happy <br /> Clients</p>--}}
 {{--                    </div>--}}
 {{--                </div>--}}
-{{--                <div class="about-item">--}}
+{{--                <div class="about-stat">--}}
 {{--                    <div class="abt-text">--}}
 {{--                        <p class="large-text">49+</p>--}}
 {{--                        <p class="small-text">Customer <br /> reviews</p>--}}
@@ -128,7 +128,7 @@
 {{--        </div>--}}
 {{--        <h4 class="stat-title">My Timeline</h4>--}}
 {{--        <div class="timeline">--}}
-{{--            <div class="timeline-item">--}}
+{{--            <div class="timeline-stat">--}}
 {{--                <div class="tl-icon">--}}
 {{--                    <i class="fas fa-briefcase"></i>--}}
 {{--                </div>--}}
@@ -144,7 +144,7 @@
 {{--                    Develop creative design for digital marketing, printing, & corporate branding.<br>--}}
 {{--                </p>--}}
 {{--            </div>--}}
-{{--            <div class="timeline-item">--}}
+{{--            <div class="timeline-stat">--}}
 {{--                <div class="tl-icon">--}}
 {{--                    <i class="fas fa-briefcase"></i>--}}
 {{--                </div>--}}
@@ -155,7 +155,7 @@
 {{--                    Promoted the webpage“servicenmaterial” new e-commerce for all types of hardware.<br>--}}
 {{--                </p>--}}
 {{--            </div>--}}
-{{--            <div class="timeline-item">--}}
+{{--            <div class="timeline-stat">--}}
 {{--                <div class="tl-icon">--}}
 {{--                    <i class="fas fa-briefcase"></i>--}}
 {{--                </div>--}}
@@ -166,7 +166,7 @@
 {{--                    Web page designing.--}}
 {{--                </p>--}}
 {{--            </div>--}}
-{{--            <div class="timeline-item">--}}
+{{--            <div class="timeline-stat">--}}
 {{--                <div class="tl-icon">--}}
 {{--                    <i class="fas fa-briefcase"></i>--}}
 {{--                </div>--}}
@@ -176,7 +176,7 @@
 {{--                    Bachelor of Business Administration--}}
 {{--                </p>--}}
 {{--            </div>--}}
-{{--            <div class="timeline-item">--}}
+{{--            <div class="timeline-stat">--}}
 {{--                <div class="tl-icon">--}}
 {{--                    <i class="fas fa-briefcase"></i>--}}
 {{--                </div>--}}
@@ -186,7 +186,7 @@
 {{--                    Basic Graphic designing Course--}}
 {{--                </p>--}}
 {{--            </div>--}}
-{{--            <div class="timeline-item">--}}
+{{--            <div class="timeline-stat">--}}
 {{--                <div class="tl-icon">--}}
 {{--                    <i class="fas fa-briefcase"></i>--}}
 {{--                </div>--}}

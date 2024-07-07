@@ -143,7 +143,7 @@ class ElementResource extends Resource
      * @param mixed $jsonSchemaData The JSON schema data used to build the form.
      * @return array An array of field sets representing the form.
      */
-    private static function buildForm($jsonSchemaData): array
+    private static function buildForm(mixed $jsonSchemaData): array
     {
         $fieldSets = [];
         foreach (ComponentConstant::cases() as $value) {

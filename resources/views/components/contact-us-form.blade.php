@@ -11,7 +11,7 @@
                     work.
                 </p>
                 <div class="contact-info">
-                    <div class="contact-item">
+                    <div class="contact-stat">
                         <div class="icon">
                             <i class="fas fa-map-marker-alt"></i>
                             <span>Location</span>
@@ -20,7 +20,7 @@
                             : Manamaiju, Kathmandu
                         </p>
                     </div>
-                    <div class="contact-item">
+                    <div class="contact-stat">
                         <div class="icon">
                             <i class="fas fa-envelope"></i>
                             <span>Email</span>
@@ -29,7 +29,7 @@
                             <span>: abhishekshakya.np@gmail.com</span>
                         </p>
                     </div>
-                    <div class="contact-item">
+                    <div class="contact-stat">
                         <div class="icon">
                             <i class="fas fa-user-graduate"></i>
                             <span>Education</span>
@@ -38,7 +38,7 @@
                             <span>: Asian College, Kathmandu</span>
                         </p>
                     </div>
-                    <div class="contact-item">
+                    <div class="contact-stat">
                         <div class="icon">
                             <i class="fas fa-solid fa-phone"></i>
                             <span>Mobile Number</span>
@@ -47,7 +47,7 @@
                             <span>: 9803666090</span>
                         </p>
                     </div>
-                    <div class="contact-item">
+                    <div class="contact-stat">
                         <div class="icon">
                             <i class="fas fa-globe-africa"></i>
                             <span>Languages</span>
