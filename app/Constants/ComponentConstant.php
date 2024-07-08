@@ -10,8 +10,8 @@ enum ComponentConstant: string
     case SKILLS = 'Skills';
     case TIMELINE = 'Timeline';
     case PORTFOLIO = 'Portfolio';
-    case MATTER = 'Matter';
-    case NEWSLETTER = 'Newsletter';
+    case BLOGS = 'Blogs';
+    case CONTACT = 'Contact';
     case SUBSCRIPTION_PLAN = 'Subscription Plan';
     case IMAGE_CARD = 'Image Card';
     case FAQ = 'FAQ';
